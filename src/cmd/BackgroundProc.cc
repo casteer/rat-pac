@@ -424,12 +424,12 @@ void BackgroundProc::SetD(std::string param, double value)
 
 // Calculates the doubles rate precision 
 Double_t BackgroundProc::CalculateDoublesPrecision(){
-        return 2.0*time_window*activity*activity*secs2day / (((double) dscount)*((double) dscount));
+        return time_window*activity*activity*secs2day / (((double) dscount)*((double) dscount));
 }
 
 // Calculates the doubles rate
 Double_t BackgroundProc::CalculateDoublesRate(Double_t cut_events){
-  return 2.0*time_window*activity*activity*secs2day*((cut_events*cut_events)/ (((double) dscount)*((double) dscount)));
+  return time_window*activity*activity*secs2day*((cut_events*cut_events)/ (((double) dscount)*((double) dscount)));
 }
 
 // Calculates the doubles rate
