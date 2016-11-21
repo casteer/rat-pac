@@ -31,6 +31,6 @@ In the rat-pac directory:
 
 ./configure 
 
-The source the env.sh script
+Then source the env.sh script
 
-Then run the ./compileRATwithFIX.sh script to compile everything. 
+Then run the ./compileRATwithFIX.sh in the rat-pac base folder script to compile everything. 
