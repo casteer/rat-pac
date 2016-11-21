@@ -21,3 +21,16 @@ package that works out of the box. Once acquainted with RAT, it is easy to
 customize the geometry elements, physics details, data structure, analysis
 tools, etc., to suit your experiment's needs.
 
+## Installation 
+
+For full installation instructions and dependencies, please see http://rat.readthedocs.io/en/latest/installation.html
+
+Once all dependencies are installed, it should be as simple as: 
+
+In the rat-pac directory: 
+
+./configure 
+
+Then source the env.sh script
+
+Then run the ./compileRATwithFIX.sh in the rat-pac base folder script to compile everything. 
