@@ -20,6 +20,8 @@
 #include <RAT/SimpleDAQProc.hh>
 #include <RAT/LessSimpleDAQProc.hh>
 
+#include "BackgroundProc.cc"
+
 namespace RAT {
 
 // Helper func defined in ConstructUserProc.cc and overridden by user
@@ -74,8 +76,12 @@ ProcBlockManager::ProcBlockManager(ProcBlock *theMainBlock)
   procAllocators["count"] = new ProcAllocatorTmpl<CountProc>;
   procAllocators["prune"] = new ProcAllocatorTmpl<PruneProc>;
 
+
   // Escape Hatch
   procAllocators["python"] = new ProcAllocatorTmpl<PythonProc>;
+
+  // Chris
+  procAllocators["background"] = new ProcAllocatorTmpl<BackgroundProc>;
 
   // -----------------------------------------------------------------
 
